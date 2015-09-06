@@ -1,3 +1,3 @@
 # michaelfischler.github.io
 
-#Personal site
+#To update the site, push HTML or Jekyll updates to the master branch.
