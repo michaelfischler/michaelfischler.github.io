@@ -1,3 +1,3 @@
 # michaelfischler.github.io
 
-#To update the site, push HTML or Jekyll updates to the master branch.
+# Personal site. Hosts portfolio and contact information.
