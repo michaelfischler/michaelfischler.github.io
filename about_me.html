@@ -101,19 +101,5 @@
     <center><img src="me.png" width="350px" height="382px"></center>
 	<center><h1>Hi! I’m <a href="about_me.html" class="site">Michael Fischler</a>, a computer science student learning <i>software development</i> and <i>network engineering</i>.<br><br> I've been enamored with technology from a young age and have been helping people with their computer troubles for 8 years. I love finding creative ways to solve technical problems.<br><br>For tech consulting, please contact: <a href="mailto:consulting@michaelfischler.xyz" class="mail">consulting@michaelfischler.xyz</a><br><br>Thanks for visiting.</h1>
     <a href="index.html"><img src="home.png" width="50px" height="50px"></a><center>
-    <time></time>
-    <script>
-    (function Time() {
-        var now = new Date();
-        var H = now.getHours();
-        var M = now.getMinutes();
-        var P = H >= 12 ? 'PM' : 'AM';
-        var D = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][now.getDay()];
-        H = ((H + 11) % 12 + 1);
-        M < 10 && (M = '0' + M);
-        document.querySelector('time').innerHTML = D + ' ' + H + ':' + M + ' ' + P;
-        setTimeout(Time, 1000);
-        })(); 
-    </script>
 </body>
 </html>
