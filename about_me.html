@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Michael Fischler</title>
+    <meta charset="utf-8"> 
+    <meta name="description" content="Michael Fischler is a technology consultant and cybersecurity researcher.">
+    <meta name="keywords" content="Michael, Fischler, Michael Fischler, software, developer, github, cybersecurity, security, netsec, infosec">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css?family=Rosarivo:400,400i" rel="stylesheet">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+	@media (max-width: 10000px) {
+   .cloud {
+	content: "";
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	}
+    .profilePic {
+        top: 50%; /* IMPORTANT */
+        left: 10%; /* IMPORTANT */
+        display: block;
+        position: absolute;
+        width: 1500px;
+        height: 1300px;
+
+        margin-top: -750px; /* HALF OF THE HEIGHT */
+        margin-left: -650px; /* HALF OF THE WIDTH */
+    }
+	}
+    html, body {
+        font-family: 'Rosarivo', serif;
+        width: 100%;
+        height: auto;
+        color: #FFF;
+        background: #000;
+        cursor: url('cur-1.png') 5 5, auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* overflow: hidden; */
+    }
+    body:after {
+        content:'';
+        position: fixed;
+        display: block;
+        z-index: 2;
+        width: 100%;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background: #FFFFFF;
+        cursor: none;
+        -webkit-animation: slideOut 600ms 600ms forwards;
+        animation: slideOut 600ms 600ms forwards;
+    }
+    h1 {
+        margin: 100px 10%;
+        max-width: 650px;
+    }
+    h1, a {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 53px;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        color: #FFF;
+    }
+    a.link {
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    a.mail {
+        cursor: url('cur-2.png') 5 5, auto;
+        border-bottom: 2px solid #FFF;
+    }
+    a.site, i {
+        font-style: italic;
+    }
+    a:hover {
+        cursor: url('cur-2.png') 5 5, auto;
+        text-decoration: none;
+        outline: none;
+        border: none;
+    }
+    time {
+        position: fixed;
+        top: 30px;
+        right: 40px;
+        min-width: 140px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        text-align: right;
+    }
+    @-webkit-keyframes slideOut {
+        100% { visibility:hidden; -webkit-transform:translateX(100%); }
+    }
+    @keyframes slideOut {
+        100% { visibility:hidden; transform:translateX(100%); }
+    }
+    </style>
+</head>
+<body>
+    <br><br><br>
+	<img src="me.png" class="profilePic">
+	<center><h1>Hello!<br><br>I’m <a href="about_me.html" class="site">Michael Fischler</a>, a computer science student learning <i>software development</i> and <i>network engineering</i>.<br>I love finding creative ways to solve technical problems.<br><br>For tech consulting or additional info, please contact: <a href="mailto:consulting@michaelfischler.xyz" class="mail">consulting@michaelfischler.xyz</a><br><br>Thanks for visiting.</h1>
+    <a href="index.html"><img src="home.png" width="50px" height="50px"></a><center>
+    <time></time>
+    <script>
+    (function Time() {
+        var now = new Date();
+        var H = now.getHours();
+        var M = now.getMinutes();
+        var P = H >= 12 ? 'PM' : 'AM';
+        var D = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][now.getDay()];
+        H = ((H + 11) % 12 + 1);
+        M < 10 && (M = '0' + M);
+        document.querySelector('time').innerHTML = D + ' ' + H + ':' + M + ' ' + P;
+        setTimeout(Time, 1000);
+        })(); 
+    </script>
+</body>
+</html>
