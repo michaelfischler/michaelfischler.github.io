@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Offical site of developer Michael Fischler. Find his software portfolio, resume, and contact information here.">
+<meta name="keywords" content="Michael, Fischler, Michael Fischler, software, developer, github, cybersecurity, security, netsec, infosec" />
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<title>Michael Fischler</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<style>
+body {
+	background-color: #000000;
+}
+
+</style>
+</head>
+<body>
+<center>
+<script type="text/javascript">
+<!--
+ var imlocation = "gifs/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(3)
+ image[0] = 'image1.gif'
+ image[1] = 'image2.gif'
+ image[2] = 'image3.gif'
+ var rand = 60/image.length
+ function randomimage() {
+ 	currentdate = new Date()
+ 	image_number = currentdate.getSeconds()
+ 	image_number = Math.floor(image_number/rand)
+ 	return(image[image_number])
+ }
+ document.write("<img src='" + imlocation + randomimage()+ "'>");
+//-->
+</script>
+</center>
+</body>
+</html>
